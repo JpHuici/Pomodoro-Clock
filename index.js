@@ -21,7 +21,8 @@ const initialState = {
   
 	const container = React.useRef(null);
 	const sound = React.useRef(null);
-  
+	
+	const scaleStyle = { transform: `translateX(${-(minuteScaleWidth / 60 * Math.floor(timeLeft))}px)` };
 	const formatedTime =
 	  ("0" + Math.floor(timeLeft / 60)).slice(-2) +
 	  ":" +
@@ -97,7 +98,7 @@ const initialState = {
 		<header className="header">
 		  <div className="header-container">
 			<div className="header-logo">
-			  <span className="logo-text-first">POMDORO</span> CLOCK
+			  <span className="logo-text-first">POMODORO</span> CLOCK
 			</div>
 		  </div>
 		</header>
