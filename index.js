@@ -4,7 +4,7 @@ const initialState = {
 	showSettings: false
   };
   
-  const audioUrl = "/Audio/24 - Clock Effect.mp3";
+  const audioUrl = "https://www.televisiontunes.com/song/download/748";
   
   function App() {
 	const [status, setStatus] = React.useState("default");
